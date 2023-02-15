@@ -2,12 +2,11 @@ import requests
 
 import enviar
 
-requisicao = requests.get("http://economia.awesomeapi.com.br/json/last/ETH-BRL")
+requisicao = requests.get(
+    "http://economia.awesomeapi.com.br/json/last/ETH-BRL"
+    ).json()
 
-requisicao_dict = requisicao.json()
-
-valor_eth = requisicao_dict["ETHBRL"]["bid"]
-horario = requisicao_dict["ETHBRL"]["create_date"]
+valor_eth = requisicao["ETHBRL"]["bid"]
 
 if valor_eth < '7826':
     enviar.eth_menor(valor_eth=valor_eth)
