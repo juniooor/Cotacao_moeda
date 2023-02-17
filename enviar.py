@@ -13,7 +13,7 @@ def eth_maior(valor_eth):
         
         for dados in emails:
             email_sender = 'testesdevjremail@gmail.com'
-            email_password = "cnfkcyfeazjlvnov"
+            email_password = "thddxarpuogyffbm"
             email_receiver = dados[0]
             data = datetime.date.today()
             data = data.strftime('%d-%b-%Y')
@@ -76,8 +76,8 @@ def eth_atual(valor_eth):
         next(emails)
         
         for dados in emails:
-            email_sender = 'testesdevjremail@gmail.com'
-            email_password = "cnfkcyfeazjlvnov"
+            email_sender = 'juniordeveloper501@gmail.com'
+            email_password = "gqjvxhmmqlspertw"
             email_receiver = dados[0]
             data = datetime.date.today()
             data = data.strftime('%d-%b-%Y')
